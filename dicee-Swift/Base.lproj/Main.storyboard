@@ -41,6 +41,9 @@
                                 <state key="normal" title="Let's Roll">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUV-Xg-tV1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,7 +52,6 @@
                     <connections>
                         <outlet property="diceImageView1" destination="4zb-q3-Ugw" id="n2P-Nc-m3Z"/>
                         <outlet property="diceImageView2" destination="cZa-cw-zmA" id="eA8-JQ-WZ1"/>
-                        <outlet property="diceeButton" destination="SZz-19-Ca3" id="K7f-lk-ICk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

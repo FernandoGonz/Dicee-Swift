@@ -3,7 +3,10 @@
 //  dicee-Swift
 //
 //  Created by Fernando Guerrero G on 28/07/21.
+// Resources App breweary https://www.appbrewery.co/p/ios-course-resources/
 //
+
+// Repositorio https://github.com/FernandoGonz/Dicee-Swift.git
 
 import UIKit
 
@@ -12,7 +15,7 @@ class ViewController: UIViewController {
     // IBOutlet allows me to reference a UI (User Interface) element
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
-    @IBOutlet weak var diceeButton: UIButton!
+    let diceeValue: Array<UIImage> = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +24,17 @@ class ViewController: UIViewController {
         // Set a new image
         // diceImageView1.image = Image Literal
         
+        
+        
+        print(diceeValue.count)
+        
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: Any) {
+        print("Button got tapped")
+        diceImageView1.image = diceeValue[0]
+        diceImageView2.image = diceeValue[0]
+    }
+    
 }
 
