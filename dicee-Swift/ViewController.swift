@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         
         diceImageView1.image = diceeValue[leftDice]
         diceImageView2.image = diceeValue[rightDice]
+        
+        // diceImageView1.image = diceeValue.randomElement()
+        // diceImageView2.image = diceeValue.randomElement()
+        
     }
     
 }
